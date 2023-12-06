@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expressions</title>
+</head>
+
+<body>
+    <script>
+
+
+        var str = "Mounic...........aaaA9999";
+        //find the a only
+        console.log(str.match(/a/gi));
+
+        //find the vowels 
+
+        console.log(str.match(/[aeiou]/gi));
+
+        //find the a to z for small
+        console.log(str.match(/[a-z]/g));
+
+        //find the a to z for captial
+        console.log(str.match(/[A-Z]/g));
+
+        //find the remainng
+        console.log(str.match(/[^a-z]/g));
+
+        //find the numbers;
+        console.log(str.match(/[\d]/g));
+
+        //not print the digits print the remaining
+        console.log(str.match(/[\D]/gi));
+
+        //find the repletation words
+        console.log(str.match(/a+/g));
+
+        //find the .reolations
+        console.log(str.match(/[.]+/g));
+
+        // console.log(/g/ig.test(str));
+
+
+        //quantify the character
+        var str1 = "booooom";
+        console.log(str1.match(/o{2}/));
+        //postivelook head value unte true lekhapothe false
+        //negativelook head value unte false lekhapothe true 
+        console.log(/b(?=o)/.test(str1));
+
+        //class
+        class hi{
+            constructor() {
+                this.n = "hello";
+                this.k = "helllo2";
+            }
+        }
+        let a = new hi();
+        console.log(a.n);
+        //class craete call method
+
+        class hii{
+            constructor() {
+                this.n1 = "Mounica";
+                this.k1 = "bhanu";
+            }
+            call(){
+                return "Mounica"+" "+this.k1;
+            }
+        }
+        let b= new hii();
+        console.log(b.k1);
+        console.log(b.call());
+
+
+    </script>
+</body>  
+
+</html>

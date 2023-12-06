@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+   <button onclick="hi()">Click here to enter your number</button>
+   <button onclick="displayDate()">The time is?</button>
+ 
+   <script>
+    let hi=() => {
+        var a = +prompt("Enter Your First Value");
+        var b = +prompt("Enter Your Second Value");
+        alert(`sum is ${a + b}`)
+    }
+   </script>
+
+
+
+<script>
+  let displayDate=()=> {
+    var currentDate = new Date();
+    // Get the current date as a string
+    var currentDateStr = currentDate.toLocaleDateString();
+    // Get the current date as a string
+    var currentTime = currentDate.toLocaleTimeString();
+    alert(`The date is ${currentDateStr}\nTime: ${currentTime}`);
+  }
+  displayDate();
+</script>
+
+
+
+<script>
+    let randomDigit="0123456789";
+    let outputNeeded = "";
+      // Loop to generate a 4-digit random number
+    for(let i=0;i<4;i++) {
+            // Generate a random digit between 0 and 9 (inclusive)
+        let randomDigit= Math.floor(Math.random() * 10);
+            // Append the random digit to the output
+        outputNeeded+= randomDigit;
+    }
+      // Display the generated 4-digit random number
+    alert(`Generated 4-Digit OTP number: ${outputNeeded}`);
+</script>
+
+
+</body>
+</html>

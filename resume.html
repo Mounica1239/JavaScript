@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <h1 id="name">MOUNICA BOMMISETTI</h1>
+    <script>
+        let name = document.getElementById("name");
+        name.style.color = "red";
+        name.style.fontSize = "42px"
+        name.style.marginLeft = "250px"
+
+        let y = document.createElement("p");
+        console.log(y);
+        y.innerHTML = "Front-End Developer"
+        document.body.appendChild(y);
+        y.style.fontSize = "30px";
+        y.style.color = "blue";
+        y.style.marginLeft = "380px"
+
+
+        let z = document.createElement("p");
+        console.log(z);
+        z.innerHTML = "Email-mounicabommisetti14@gmail.com    <span id='phn' >Phone No-8074289662</span>"
+        document.body.appendChild(z);
+        document.getElementById('phn').style.marginLeft = "165px"
+        z.style.fontSize = "22px";
+
+        let ac = document.createElement("p");
+        console.log(ac);
+        ac.innerHTML = "linkedin.com/in/mounica-bommisetti-77343827a   <span id='link' >github.com/Mounica1239?tab=repositories</span>"
+        document.body.appendChild(ac);
+        document.getElementById('link').style.marginLeft = "100px"
+        ac.style.fontSize = "22px";
+        ac.style.color = "#0080ff";
+
+
+        let photo = document.createElement("img");
+        console.log(photo);
+        photo.setAttribute("src", "./Mounicapic.jpeg");
+        document.body.appendChild(photo);
+        photo.style.width = "200px";
+        photo.style.height = "200px"
+        photo.style.position = "absolute";
+        photo.style.marginLeft = "1000px"
+        photo.style.top = "40px";
+        photo.style.borderRadius = "50%";
+
+        let ad = document.createElement("hr");
+        console.log(ad);
+        document.body.appendChild(ad);
+        //career objective
+        let a = document.createElement("h2");
+        console.log(a);
+        a.innerHTML = "CAREER OBJECTIVE:"
+        document.body.appendChild(a);
+        a.style.textDecoration = "underline";
+        a.style.color = "blue";
+        //carrer objective paragraph
+        let b = document.createElement("p");
+        console.log(b);
+        b.innerHTML = "I would like to be a part of an organization where I could implement and enhance my knowledge and talent for the development of the organization and myself."
+        document.body.appendChild(b);
+        b.style.fontSize = "22px";
+        let educationDetails = document.createElement("h2");
+        console.log(educationDetails);
+        educationDetails.innerHTML = "EDUCATION QUALIFICATION:";
+        document.body.appendChild(educationDetails);
+        educationDetails.style.textDecoration = "underline";
+        educationDetails.style.color = "blue";
+        //get the education details;
+        let collegeDetails = document.createElement("p");
+        console.log(collegeDetails);
+        collegeDetails.innerHTML = "Ramachandra College of Engineering";
+        document.body.appendChild(collegeDetails);
+        collegeDetails.style.fontSize = "22px"
+        //college name
+        let d = document.createElement("p");
+        console.log(d);
+        d.innerHTML = "Bachelor of Technology";
+        document.body.appendChild(d);
+        d.style.fontSize = "19px"
+        //year of passing 
+        let e = document.createElement("p");
+        console.log(e);
+        e.innerHTML = "2013 - 2017";
+        document.body.appendChild(e);
+        //skills
+        let g = document.createElement("h2");
+        console.log(g);
+        g.innerHTML = "TECHNICAL SKILLS :"
+        document.body.appendChild(g);
+        g.style.color = "blue";
+        g.style.textDecoration = "underline";
+        //list of techinocal skills:
+        let h = document.createElement("ul")
+        let skills = ["Hyper Text Markup Language 5", "CSS 3", "GitHub", "Bootstrap", "JavaScript", "React"];
+        for (i = 0; i < skills.length; i++) {
+            let li = document.createElement("li");
+            li.textContent = skills[i];
+            h.appendChild(li);
+            h.style.fontSize = "22px"
+
+        }
+        document.body.appendChild(h);
+
+        //workexperience
+        let j = document.createElement("h2");
+        console.log(j);
+        j.innerHTML = "WORK EXPERIENCE:"
+        document.body.appendChild(j);
+        j.style.color = "blue";
+        j.style.textDecoration = "underline"
+
+        //role
+        let k = document.createElement("p");
+        console.log(k);
+        k.innerHTML = "Front-End Developer";
+        document.body.appendChild(k);
+        k.style.fontSize = "22px";
+        //company name 
+        let l = document.createElement("p");
+        console.log(l);
+        l.innerHTML = "Virtusa Consulting -Technology";
+        document.body.appendChild(l);
+        l.style.fontSize = "19px";
+        //year
+        let m = document.createElement("p");
+        console.log(m);
+        m.innerHTML = "May 2022 - April 2023 ";
+        document.body.appendChild(m);
+        //project 
+        let n = document.createElement("h2");
+        console.log(n);
+        n.innerHTML = "PROJECT TITLE:- CHESSBOARD DESIGN:";
+        document.body.appendChild(n);
+        n.style.textDecoration = "underline";
+        n.style.color = "blue";
+        //projectdecription
+        let o = document.createElement("p");
+        console.log(o);
+        o.innerHTML = "Project Description:-";
+        document.body.appendChild(o);
+        o.style.fontSize = "22px"
+        //li
+        let p = document.createElement("ul")
+        let key = ["Designed and implemented a responsive chessboard using HTML and CSS.", "Utilized CSS Grid and Flexbox for creating the layout, ensuring compatibility with various screen sizes.", "Demonstrated attention to detail by accurately replicating the classic 8x8 chessboard pattern", "Implemented a clean and visually appealing design, adhering to best practices in web design and user interface principles.", "Tested and optimized the chessboard for cross-browser compatibility to ensure a consistent user experience."];
+        for (i = 0; i < key.length; i++) {
+            let li = document.createElement("li");
+            li.textContent = key[i];
+            p.appendChild(li);
+            p.style.fontSize = "22px"
+
+        }
+        document.body.appendChild(p);
+        //Key Achievements:
+        let q = document.createElement("p");
+        console.log(q);
+        q.innerHTML = "Key Achievements:-";
+        document.body.appendChild(q);
+        q.style.fontSize = "22px"
+        //li
+        let r = document.createElement("ul")
+        let keys = ["Successfully created a visually appealing and responsive chessboard, showcasing proficiency in frontend web development.", "Demonstrated the ability to work independently and meet project requirements.", "Link to Project: https://dashing-maamoul-9f1167.netlify.app"];
+        for (i = 0; i < keys.length; i++) {
+            let li = document.createElement("li");
+            li.textContent = keys[i];
+            r.appendChild(li);
+            r.style.fontSize = "22px"
+        }
+        document.body.appendChild(r);
+        //responibilities
+        let s = document.createElement("h2");
+        console.log(s);
+        s.innerHTML = "RESPONSIBILITES:";
+        document.body.appendChild(s);
+        s.style.textDecoration = "underline";
+        s.style.color = "blue";
+
+        //li
+        let t = document.createElement("ul")
+        let keyss = ["Involved in all the phases of the end-to-end implementation for project requirements gathering, analysis, design, development and testing.", "Communicate with clients or stakeholders to understand project requirements, provide updates, and gather feedback.", "Participated in the code review sessions with team.", "Analysis, design, development and testing for the given assignments.", "Use version control systems (e.g., Git) to manage and collaborate on code with other developers"];
+        for (i = 0; i < keyss.length; i++) {
+            let li = document.createElement("li");
+            li.textContent = keyss[i];
+            t.appendChild(li);
+            t.style.fontSize = "22px"
+        }
+        document.body.appendChild(t);
+        //declaration
+
+        let u = document.createElement("h2");
+        console.log(u);
+        u.innerHTML = "DECLARATION:";
+        document.body.appendChild(u);
+        u.style.textDecoration = "underline";
+        u.style.color = "blue";
+
+        let v = document.createElement("p");
+        console.log(v);
+        v.innerHTML = "I hereby declare that above furnished particulars are true to the best of my knowledge and belief.";
+        document.body.appendChild(v);
+        v.style.fontSize = "22px"
+        //place
+        let w = document.createElement("p");
+        console.log(w);
+        w.innerHTML = "Place:";
+        document.body.appendChild(w);
+        w.style.fontSize = "22px"
+
+        let ab = document.createElement("p");
+        console.log(ab);
+        ab.innerHTML = "Mounica Bommisetti.";
+        document.body.appendChild(ab);
+        ab.style.fontSize = "22px"
+        ab.style.position = "absolute";
+        ab.style.top = "1650px";
+        ab.style.left = "700px";
+
+        //date
+        let x = document.createElement("p");
+        console.log(x);
+        x.innerHTML = "Date:";
+        document.body.appendChild(x);
+        x.style.fontSize = "22px"
+
+
+
+    </script>
+</body>
+
+</html>

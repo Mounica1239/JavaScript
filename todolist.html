@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        h1 {
+            color: deeppink;
+            background-color: #12181B;
+            
+        }
+
+        body {
+            background-color: #12181B;
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 10px;
+            height: 600px;
+            width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<div class="container">
+    <h1>TO-DO-LIST........</h1>
+    <input type="text" id="searchName" placeholder="Search here">
+    <button type="submit" id="addMore">Add</button>
+    <div id="taskList">
+    </div>
+
+</div>
+
+<body>
+    <script>
+        const searchName = document.getElementById("searchName");
+        const addMore = document.getElementById("addMore");
+        const taskList = document.getElementById("taskList");
+
+        addMore.addEventListener("click", () => {
+            const taskText = searchName.value;
+            let note = document.createElement("p");
+            note.textContent = taskText;
+            note.style.fontSize = "28px"
+            note.style.color ="darkblue"
+            taskList.appendChild(note);
+
+
+            addMore.style.color = "#498AFB";
+            addMore.style.fontSize = "20px"
+            addMore.style.borderRadius="30px"
+
+
+            let addButton = document.createElement("button");
+            addButton.innerHTML = '<i class="fa fa-check-square"></i>';
+
+            addButton.style.fontSize = "20px"
+
+            addButton.style.color = "darkgreen";
+            addButton.style.marginLeft = "20px";
+            note.appendChild(addButton);
+
+
+            addButton.addEventListener("click", () => {
+                note.style.textDecoration = "line-through"
+
+            });
+
+            let removeButton = document.createElement("button");
+            removeButton.innerHTML = '<i class="fa fa-trash"></i>';
+            removeButton.style.color = "red";
+            removeButton.style.fontSize = "20px";
+            removeButton.style.marginLeft = "40px"
+            note.appendChild(removeButton);
+
+
+
+            removeButton.addEventListener("click", () => {
+                note.remove();
+
+            })
+
+            searchName.value = "";
+
+
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>

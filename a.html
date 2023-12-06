@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        debugger
+//         let arr1 = [1,2,3,4,56];
+// let arr2 = 0;
+// for(i=0;i<arr1.length;i++) {
+//     if(arr1[i]>arr2){
+//         arr2 = arr1[i];
+        
+//     }
+// }
+
+let a = [1,5,6,3,2];
+let firstLargest = 0;
+let secondLargest = 0;
+for (let i =0; i<a.length; i++) {
+    if(a[i]>firstLargest){
+        secondLargest = firstLargest;
+        firstLargest= a[i];
+        
+    
+}else if (a[i]< firstLargest && a[i]>secondLargest){
+
+
+    
+     secondLargest =a[i];
+}   
+}
+console.log( secondLargest);
+    </script>
+
+    
+</body>
+</html>

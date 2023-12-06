@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+debugger
+function sequence(subseq, arr) {
+    let Subseq = 0;
+    for(let i=0;i<arr.length;i++) {
+        if(arr[i]==subseq[Subseq]){
+            Subseq++;
+        }
+        if(Subseq==subseq.length){
+            return true;
+        }
+        
+    }
+    return false;
+}
+
+console.log(sequence([7, -1, 5, -3], [5, 7, 3, 2, 2, 7, -1, 5, -3, 13, 4]));
+console.log(sequence([7, -1, 4, -3], [5, 7, 3, 2, 2, 7, -1, 5, -3, 13, 4]));
+console.log(sequence([13, -3, 4, 1], [5, 7, 3, 2, 2, 7, -1, 5, -3, 13, 4]));
+
+    </script>
+    
+</body>
+</html>
